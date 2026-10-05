@@ -59,9 +59,9 @@ Products are sorted by company size/market valuation (descending).
 
 ## 🔓 Open-Source GitHub Projects
 
-Sorted strictly by GitHub star count in descending order.
+Sorted strictly by GitHub Stars_Count in descending order.
 
-| Repo | Description | Stars |
+| Repo | Description | GitHub_Stars |
 | :--- | :--- | :--- |
 | **[Dear ImGui](https://github.com/ocornut/imgui)** | **Immediate-mode GUI library for game engines and tools.** Minimalist, renderer-agnostic, fast C++ UI framework with zero dependencies. MIT License. | [![Stars](https://img.shields.io/github/stars/ocornut/imgui?style=social&color=white)](https://github.com/ocornut/imgui/stargazers) |
 | **[raylib](https://github.com/raysan5/raylib)** | **Simple and easy-to-use C/C++ library for video game programming and interactive GUI apps.** Includes raygui for immediate-mode tools. zlib/libpng License. | [![Stars](https://img.shields.io/github/stars/raysan5/raylib?style=social&color=white)](https://github.com/raysan5/raylib/stargazers) |
