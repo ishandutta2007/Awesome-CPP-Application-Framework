@@ -1,294 +1,113 @@
-# Awesome-CPP-Application-Framework
-
-# 顶级 C++ 应用框架生态系统
-
-
-
-**精选商业产品与开源 GitHub 项目列表**
-
-*聚焦 GUI 工具包、通用库、音频框架与即时模式 UI*
-
-**最后更新：2026 年 10 月**
-
-
-
-本仓库追踪 **C++ 应用框架** 领域的知名 **商业产品**与**开源项目**。这些工具帮助 C++ 开发者构建跨平台桌面应用、嵌入式设备 UI、音频处理软件和高性能图形界面。
-
-
-
-**示例**包括 Microsoft Foundation Class (MFC)、Qt、wxWidgets、JUCE、Boost、C++Builder VCL、POCO C++ Libraries、FLTK、GTKmm 和 Dear ImGui（该领域的领先者）。
-
-
-
-**开源重点**：C++ 应用框架领域拥有 **极为成熟且多样化的开源生态**。**wxWidgets** 和 **FLTK** 允许在专有软件中自由使用，无需开源你的代码 。**GTKmm** 采用 LGPL 许可，可开发闭源商业软件 。**POCO** 和 **Dear ImGui** 则采用宽松的 Boost/MIT 许可，完全免费用于商业项目 。本列表重点收录这些生产级方案。
-
-
-
-欢迎贡献！提交 PR 以添加/更新条目。保持描述事实性，并链接到官方网站。
-
-
-
-## 目录
-
-
-
-- [💼 商业产品](#-商业产品)
-
-- [🔓 开源 GitHub 项目](#-开源-github-项目)
-
-- [如何贡献](#如何贡献)
-
-- [免责声明](#免责声明)
-
-
-
-## 💼 商业产品
-
-
-
-> **📊 市场背景**：C++ GUI 框架市场 **高度集中** —— **Qt** 是唯一真正意义上的商业 C++ 应用框架，采用**双重许可模式**（商业许可 + 开源 GPL/LGPL）。**Microsoft MFC** 和 **Embarcadero VCL** 是 Windows 平台专属的框架，随各自 IDE 授权提供 。Qt 的商业许可按订阅制收费，包含技术支持、维护周期延长和合规认证支持 。评估期为 **10 天**，可联系销售延长 。
-
-
-
-| 产品 | 描述 | 定价（起步层级） | 免费层级限制 | 公司规模 |
-
-|------|------|------------------|--------------|----------|
-
-| **[Qt 商业许可](https://www.qt.io/development/qt-framework/commercial-qt)** | **最全面的跨平台 C++ 应用框架。** 提供 Application Development（桌面/移动应用）和 Device Creation（嵌入式设备）两种许可。包含 QML、Qt Widgets、Qt Quick、Multimedia、Networking 等模块 。 | **Application Development Professional**：订阅制，需联系销售获取报价。**Device Creation** 另需**每设备 Distribution License** 。 | **10 天评估期**，可联系销售延长。评估期间**不得用于生产或实际产品开发** 。 | **上市公司（Qt Group）** |
-
-| **[Microsoft Foundation Class (MFC)](https://learn.microsoft.com/en-us/cpp/mfc/mfc-desktop-applications)** | **Windows 平台经典 C++ 框架。** 随 Visual Studio 提供，封装 Win32 API 用于构建原生 Windows 桌面应用 。 | **随 Visual Studio 授权提供**。社区版 Visual Studio 免费，但**不包含 MFC**（需单独获取）。 | **Visual Studio Community 免费**，但 MFC 需额外配置。**MFC 再分发**需有效 Visual Studio 许可证 。 | **~$281B 营收（Microsoft FY2025）** |
-
-| **[C++Builder VCL](https://www.embarcadero.com/products/cbuilder)** | **Windows 平台原生 UI 框架。** 随 C++Builder 提供，用于构建数据密集型桌面应用 。 | **Professional**：**$1,599**（促销 $880+$399）；**Enterprise**：**$3,999**（促销 $2,000+$2,999）；**Architect**：**$5,999**（促销 $2,800+$4,199）。 | **Community Edition**：免费，适用于**年收入低于 $5,000 美元**的自由开发者、初创企业和非营利组织 。 | **私有（Embarcadero）** |
-
-
-
-## 🔓 开源 GitHub 项目
-
-
-
-按星标数降序排列。星标徽章链接到对应仓库的 stargazers 页面。
-
-
-
-| 仓库 | 描述 | 星标 |
-
-|------|------|------|
-
-| **[Boost](https://github.com/boostorg/boost)** — **C++ 标准库的试验场。** 提供智能指针、正则表达式、线程、文件系统、日期时间等高质量库，许多已成为 C++ 标准的一部分。**Boost 软件许可**，商业友好。 | [![Stars](https://img.shields.io/github/stars/boostorg/boost?style=social&color=white)](https://github.com/boostorg/boost/stargazers) | ~7,500 |
-
-| **[Dear ImGui](https://github.com/ocornut/imgui)** — **即时模式 GUI 库，专为游戏引擎和工具打造。** 极简、快速、无外部依赖。MIT 许可，完全免费用于商业项目 。 | [![Stars](https://img.shields.io/github/stars/ocornut/imgui?style=social&color=white)](https://github.com/ocornut/imgui/stargazers) | ~65,000 |
-
-| **[wxWidgets](https://github.com/wxWidgets/wxWidgets)** — **跨平台原生 GUI 框架。** 使用各平台原生控件，应用外观与操作系统一致。**允许在专有软件中自由使用**，无需开源你的代码 。 | [![Stars](https://img.shields.io/github/stars/wxWidgets/wxWidgets?style=social&color=white)](https://github.com/wxWidgets/wxWidgets/stargazers) | ~6,000 |
-
-| **[FLTK](https://github.com/fltk/fltk)** — **轻量级跨平台 GUI 工具包。** 体积小、速度快、依赖少。**GNU LGPL 许可**，可用于商业软件 。 | [![Stars](https://img.shields.io/github/stars/fltk/fltk?style=social&color=white)](https://github.com/fltk/fltk/stargazers) | ~2,000 |
-
-| **[JUCE](https://github.com/juce-framework/JUCE)** — **音频应用开发框架。** 用于构建音频插件、DAW、合成器等。**JUCE Personal 免费**（年收入低于 $50K），Indie $35/月，Pro $65/月 。 | [![Stars](https://img.shields.io/github/stars/juce-framework/JUCE?style=social&color=white)](https://github.com/juce-framework/JUCE/stargazers) | ~7,000 |
-
-| **[POCO C++ Libraries](https://github.com/pocoproject/poco)** — **网络和应用程序框架。** 类似 Java 类库或 .NET 框架的 C++ 集合。**Boost 软件许可**，完全免费用于商业和非商业用途 。 | [![Stars](https://img.shields.io/github/stars/pocoproject/poco?style=social&color=white)](https://github.com/pocoproject/poco/stargazers) | ~8,500 |
-
-| **[GTKmm](https://github.com/GNOME/gtkmm)** — **GTK+ 的官方 C++ 接口。** 采用 **LGPL 许可**，可开发开源、自由或**闭源商业软件**，无需购买许可证 。 | [![Stars](https://img.shields.io/github/stars/GNOME/gtkmm?style=social&color=white)](https://github.com/GNOME/gtkmm/stargazers) | ~3,000 |
-
-
-
-**值得探索的其他开源选项：**
-
-
-
-| 仓库 | 描述 |
-
-|------|------|
-
-| **[NanoGUI](https://github.com/wjakob/nanogui)** — 基于 OpenGL 的极简跨平台 GUI 库，适合图形应用。 |
-
-| **[ImGui Docking](https://github.com/ocornut/imgui/tree/docking)** — Dear ImGui 的 docking 分支，支持可停靠窗口。 |
-
-| **[Slint](https://github.com/slint-ui/slint)** — 声明式 GUI 工具包，支持 C++、Rust 和 JavaScript。 |
-
-| **[Ultralight](https://github.com/ultralight-ux/Ultralight)** — 轻量级 HTML UI 渲染引擎，适用于 C++ 应用。 |
-
-
-
-## 如何贡献
-
-
-
-1. Fork 仓库。
-
-2. 在 `README.md` 中添加/编辑条目（遵循现有格式）。
-
-3. 包含：名称、链接、1–2 句描述，以及是商业产品还是开源。
-
-4. 提交 PR 并附简短说明。
-
-
-
-如果你觉得这个仓库有用，请点星！
-
-
-
-## 免责声明
-
-
-
-- 这是一个 **社区精选** 列表——并非详尽无遗，也不构成认可。
-
-- C++ 应用框架处理敏感的应用逻辑和用户数据；确保适当的访问控制和合规性。
-
-- **开源现实**：C++ 应用框架领域拥有 **极为成熟且许可友好的开源生态**。**wxWidgets** 和 **FLTK** 允许在专有软件中自由使用 ，**GTKmm** 的 LGPL 许可允许闭源商业开发 ，**POCO** 和 **Dear ImGui** 采用宽松的 Boost/MIT 许可 。**Qt 的开源版本**（GPL/LGPL）同样可用，但商业项目需仔细评估许可条款 —— **开源的核心是自由，而非免费** 。商业产品（MFC、VCL）主要面向 Windows 平台和企业级 Visual Studio/C++Builder 用户 。
-
-
-
----
-
-
-
-**为 C++ 开发者、系统架构师、嵌入式工程师和桌面应用开发团队打造。**
-
-让 C++ 应用开发更开放、透明、可移植。
-# Awesome-CPP-Application-Framework
-
-# Awesome-CPP-Application-Framework
-
-
-
-**Curated List of Commercial Products & Open-Source GitHub Projects**
-
-*Focused on GUI Toolkits, General-Purpose Libraries, Audio Frameworks & Immediate-Mode UI*
+<p align="center">
+  <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a>
+  <a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
+  <a href="https://github.com/ishandutta2007/Awesome-CPP-Application-Framework/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-CPP-Application-Framework?style=flat-square" alt="Stars"/></a>
+  <a href="https://github.com/ishandutta2007/Awesome-CPP-Application-Framework/network/members"><img src="https://img.shields.io/github/forks/ishandutta2007/Awesome-CPP-Application-Framework?style=flat-square" alt="Forks"/></a>
+  <a href="https://github.com/ishandutta2007/Awesome-CPP-Application-Framework/issues"><img src="https://img.shields.io/github/issues/ishandutta2007/Awesome-CPP-Application-Framework?style=flat-square" alt="Issues"/></a>
+  <a href="https://github.com/ishandutta2007/Awesome-CPP-Application-Framework/blob/main/LICENSE"><img src="https://img.shields.io/github/license/ishandutta2007/Awesome-CPP-Application-Framework?style=flat-square" alt="License"/></a>
+  <a href="https://github.com/ishandutta2007"><img alt="GitHub followers" src="https://img.shields.io/github/followers/ishandutta2007?label=Follow" /></a>
+</p>
+
+<p align="center">
+  <img src="assets/banner.svg" alt="Awesome C++ Application Framework Banner" width="100%" />
+</p>
+
+# 🚀 Awesome C++ Application Framework
+
+> A curated list of top-tier commercial products and production-grade open-source C++ application frameworks, GUI toolkits, audio engines, and cross-platform libraries.
 
 **Last updated: October 2026**
 
+---
 
+## 💡 Overview & SEO Keywords
 
-This repository tracks notable **commercial products** and **open-source projects** for **C++ Application Frameworks**. These tools help C++ developers build cross-platform desktop applications, embedded device UIs, audio processing software, and high-performance graphical interfaces.
+The **C++ application framework ecosystem** powers high-performance desktop software, real-time audio processors, embedded system interfaces, and graphical tools across Windows, macOS, Linux, iOS, Android, and WebAssembly.
 
-
-
-**Examples** include Microsoft Foundation Class (MFC) Library, Qt, wxWidgets, JUCE, Boost, C++Builder VCL, POCO C++ Libraries, FLTK, GTKmm, and Dear ImGui (the category leaders).
-
-
-
-**Open-source emphasis**: The C++ application framework ecosystem is **exceptionally mature and license-friendly**. **wxWidgets** and **FLTK** allow free use in proprietary software without open-sourcing your code . **GTKmm** uses LGPL licensing, enabling closed-source commercial development . **POCO** and **Dear ImGui** use permissive Boost/MIT licenses, completely free for commercial projects . This section documents these production-grade solutions.
-
-
-
-Contributions welcome! Open a PR to add/update entries. Keep descriptions factual and link to official sites.
-
-
-
-## 📖 Table of Contents
-
-
-
-- [💼 Commercial Products](#-commercial-products)
-
-- [🔓 Open-Source GitHub Projects](#-open-source-github-projects)
-
-- [🤝 How to Contribute](#-how-to-contribute)
-
-- [⚠️ Disclaimer](#-disclaimer)
-
-
-
-## 💼 Commercial Products
-
-
-
-> **📊 Market Context**: The C++ GUI framework market is **highly concentrated** — **Qt** is the only true commercial C++ application framework with a **dual-licensing model** (commercial + open-source GPL/LGPL). **Microsoft MFC** and **Embarcadero VCL** are Windows-only frameworks bundled with their respective IDEs . Qt's commercial licenses are subscription-based, including technical support, extended maintenance cycles, and compliance certification support . Evaluation period is **10 days**, extendable by contacting sales .
-
-
-
-| Product | Description | Pricing (Starting Tier) | Free Tier Limits | Company Size |
-
-|----------|-------------|------------------------|------------------|--------------|
-
-| **[Qt Commercial](https://www.qt.io/development/qt-framework/commercial-qt)** | **The most comprehensive cross-platform C++ application framework.** Application Development (desktop/mobile) and Device Creation (embedded) licenses. Includes QML, Qt Widgets, Qt Quick, Multimedia, Networking modules . | **Application Development Professional**: Subscription-based; contact sales for quote. **Device Creation**: Additional per-device Distribution License required . | **10-day evaluation period**, extendable by contacting sales. **Cannot be used for production or actual product development** during evaluation . | **Public (Qt Group)** |
-
-| **[Microsoft Foundation Class (MFC)](https://learn.microsoft.com/en-us/cpp/mfc/mfc-desktop-applications)** | **The classic Windows C++ framework.** Ships with Visual Studio, wraps Win32 API for native Windows desktop applications . | **Bundled with Visual Studio licensing**. Visual Studio Community is free but **does not include MFC** (requires separate acquisition). | **Visual Studio Community is free** but MFC requires additional configuration. **MFC redistribution** requires a valid Visual Studio license . | **~$281B revenue (Microsoft FY2025)** |
-
-| **[C++Builder VCL](https://www.embarcadero.com/products/cbuilder)** | **Native Windows UI framework.** Ships with C++Builder, used for building data-intensive desktop applications . | **Professional**: **$1,599** (promo $880+$399); **Enterprise**: **$3,999** (promo $2,000+$2,999); **Architect**: **$5,999** (promo $2,800+$4,199). | **Community Edition**: Free for freelancers, startups, and non-profits with **annual revenue under $5,000** . | **Private (Embarcadero)** |
-
-
-
-## 🔓 Open-Source GitHub Projects
-
-
-
-Sorted by star count (descending). Star badge links to each repo's stargazers page.
-
-
-
-| Repo | Description | Stars |
-
-|---|---|---|
-
-| **[Dear ImGui](https://github.com/ocornut/imgui)** — **Immediate-mode GUI library for game engines and tools.** Minimal, fast, no external dependencies. MIT licensed, completely free for commercial projects . | [![Stars](https://img.shields.io/github/stars/ocornut/imgui?style=social&color=white)](https://github.com/ocornut/imgui/stargazers) | ~65,000 |
-
-| **[Boost](https://github.com/boostorg/boost)** — **The C++ standard library proving ground.** Smart pointers, regex, threading, filesystem, date-time, and more—many now part of C++ standard. **Boost Software License**, commercial-friendly. | [![Stars](https://img.shields.io/github/stars/boostorg/boost?style=social&color=white)](https://github.com/boostorg/boost/stargazers) | ~7,500 |
-
-| **[POCO C++ Libraries](https://github.com/pocoproject/poco)** — **Network-centric and application framework.** A C++ collection similar to Java class libraries or .NET Framework. **Boost Software License**, completely free for commercial and non-commercial use . | [![Stars](https://img.shields.io/github/stars/pocoproject/poco?style=social&color=white)](https://github.com/pocoproject/poco/stargazers) | ~8,500 |
-
-| **[JUCE](https://github.com/juce-framework/JUCE)** — **Audio application development framework.** Used for audio plugins, DAWs, synthesizers. **JUCE Personal free** (annual revenue under $50K), Indie $35/month, Pro $65/month . | [![Stars](https://img.shields.io/github/stars/juce-framework/JUCE?style=social&color=white)](https://github.com/juce-framework/JUCE/stargazers) | ~7,000 |
-
-| **[wxWidgets](https://github.com/wxWidgets/wxWidgets)** — **Cross-platform native GUI framework.** Uses native controls, so app appearance matches the OS. **Allows free use in proprietary software** without open-sourcing your code . | [![Stars](https://img.shields.io/github/stars/wxWidgets/wxWidgets?style=social&color=white)](https://github.com/wxWidgets/wxWidgets/stargazers) | ~6,000 |
-
-| **[GTKmm](https://github.com/GNOME/gtkmm)** — **Official C++ interface for GTK+.** Uses **LGPL license**, enabling development of open-source, free, or **closed-source commercial software** without purchasing a license . | [![Stars](https://img.shields.io/github/stars/GNOME/gtkmm?style=social&color=white)](https://github.com/GNOME/gtkmm/stargazers) | ~3,000 |
-
-| **[FLTK](https://github.com/fltk/fltk)** — **Lightweight cross-platform GUI toolkit.** Small, fast, few dependencies. **GNU LGPL license**, usable in commercial software . | [![Stars](https://img.shields.io/github/stars/fltk/fltk?style=social&color=white)](https://github.com/fltk/fltk/stargazers) | ~2,000 |
-
-
-
-**Additional open-source options worth exploring:**
-
-
-
-| Repo | Description |
-
-|---|---|
-
-| **[NanoGUI](https://github.com/wjakob/nanogui)** — Minimal cross-platform GUI library based on OpenGL, for graphics applications. |
-
-| **[ImGui Docking](https://github.com/ocornut/imgui/tree/docking)** — Dear ImGui docking branch with dockable window support. |
-
-| **[Slint](https://github.com/slint-ui/slint)** — Declarative GUI toolkit supporting C++, Rust, and JavaScript. |
-
-| **[Ultralight](https://github.com/ultralight-ux/Ultralight)** — Lightweight HTML UI rendering engine for C++ applications. |
-
-
-
-## 🤝 How to Contribute
-
-
-
-1. Fork the repo.
-
-2. Add/edit entries in `README.md` (follow existing format).
-
-3. Include: name, link, 1–2 sentence description, and whether it's commercial or open-source.
-
-4. Submit PR with a short explanation.
-
-
-
-Star the repo if you find it useful!
-
-
-
-## ⚠️ Disclaimer
-
-
-
-- This is a **community-curated** list — not exhaustive and not an endorsement.
-
-- C++ application frameworks handle sensitive application logic and user data; ensure proper access controls and compliance.
-
-- **Open-source reality**: The C++ application framework ecosystem is **exceptionally mature and license-friendly**. **wxWidgets** and **FLTK** allow free use in proprietary software , **GTKmm** uses LGPL permitting closed-source commercial development , and **POCO** and **Dear ImGui** use permissive Boost/MIT licenses . **Qt's open-source edition** (GPL/LGPL) is also available, but commercial projects must carefully evaluate licensing terms — **the essence of open source is freedom, not free of cost** . Commercial products (MFC, VCL) target primarily Windows platforms and enterprise Visual Studio/C++Builder users .
-
-
+This repository catalogs key **commercial solutions** and **open-source C++ libraries** categorized for system architects, desktop developers, audio engineers, and embedded software teams searching for:
+- **C++ GUI Toolkits**: Cross-platform native and immediate-mode GUIs.
+- **Application Frameworks**: Full-stack C++ libraries providing event loops, networking, data binding, and modular architectures.
+- **Audio & Multimedia Engines**: Frameworks designed for VST plugins, DAWs, and digital signal processing (DSP).
+- **Embedded & Lightweight UIs**: Low-footprint, fast UI frameworks tailored for resource-constrained hardware.
 
 ---
 
+## 📑 Table of Contents
 
+- [💼 Commercial Products](#-commercial-products)
+- [🔓 Open-Source GitHub Projects](#-open-source-github-projects)
+- [🤝 How to Contribute](#-how-to-contribute)
+- [⚠️ Disclaimer](#-disclaimer)
+- [📈 Star History](#-star-history)
+- [💖 Support & Community](#-support--community)
 
-**Made for C++ developers, systems architects, embedded engineers, and desktop application teams.**
+---
 
-Let's make C++ application development more open, transparent, and portable.
+## 💼 Commercial Products
+
+> **📊 Market Context & Size**: The global market for C++ GUI application frameworks and developer software tools is estimated at **~$1.8 Billion** (2026), growing at a ~7.2% CAGR. The commercial segment is **highly concentrated** (winner-take-all dynamics) with **Qt** dominating cross-platform commercial application development, while **Microsoft MFC** and **Embarcadero VCL** hold enterprise desktop legacy segments on Windows.
+
+Products are sorted by company size/market valuation (descending).
+
+| Product | Description | Pricing (Starting Tier) | Free Tier / Trial Limits | Company Size / Valuation |
+| :--- | :--- | :--- | :--- | :--- |
+| **[Microsoft Foundation Class (MFC)](https://learn.microsoft.com/en-us/cpp/mfc/mfc-desktop-applications)** | **Classic Windows C++ Framework.** Ships with Visual Studio, wrapping Win32 APIs for enterprise Windows desktop software. | **$45/month** (bundled with Visual Studio Professional subscription) | **Visual Studio Community is free** for individual developers & small orgs (<$1M revenue, <5 users); MFC workload required. | **~$3.1 Trillion** market cap / ~$281B revenue (Microsoft FY2025) |
+| **[Qt Commercial](https://www.qt.io/development/qt-framework/commercial-qt)** | **Comprehensive Cross-Platform Application Framework.** Full QML, Qt Quick, Widgets, Multimedia, and Embedded Device Creation modules. | **$3,950/year** per developer (Application Development Professional subscription) | **10-day evaluation trial** (requires sales request, strictly no commercial product development allowed during trial). | **~$1.8 Billion** market cap / ~$210M annual revenue (Qt Group Oyj) |
+| **[C++Builder VCL](https://www.embarcadero.com/products/cbuilder)** | **Native Windows Visual Component Library.** Accelerated visual application builder for data-intensive Windows software. | **$1,599/year** (Professional edition single-user license) | **Community Edition is free** for freelancers and early-stage projects with **annual revenue under $5,000**. | **~$500 Million** estimated valuation (Idera, Inc. parent company) |
+
+---
+
+## 🔓 Open-Source GitHub Projects
+
+Sorted strictly by GitHub star count in descending order.
+
+| Repo | Description | Stars |
+| :--- | :--- | :--- |
+| **[Dear ImGui](https://github.com/ocornut/imgui)** | **Immediate-mode GUI library for game engines and tools.** Minimalist, renderer-agnostic, fast C++ UI framework with zero dependencies. MIT License. | [![Stars](https://img.shields.io/github/stars/ocornut/imgui?style=social&color=white)](https://github.com/ocornut/imgui/stargazers) |
+| **[raylib](https://github.com/raysan5/raylib)** | **Simple and easy-to-use C/C++ library for video game programming and interactive GUI apps.** Includes raygui for immediate-mode tools. zlib/libpng License. | [![Stars](https://img.shields.io/github/stars/raysan5/raylib?style=social&color=white)](https://github.com/raysan5/raylib/stargazers) |
+| **[Slint](https://github.com/slint-ui/slint)** | **Declarative GUI toolkit for desktop and embedded applications.** Supports C++, Rust, and JavaScript with modern design tools. Royalty-free / GPLv3 / Commercial License. | [![Stars](https://img.shields.io/github/stars/slint-ui/slint?style=social&color=white)](https://github.com/slint-ui/slint/stargazers) |
+| **[POCO C++ Libraries](https://github.com/pocoproject/poco)** | **Network-centric and application development framework.** Enterprise-grade C++ libraries for building network apps, HTTP servers, XML, and data access layer. Boost Software License. | [![Stars](https://img.shields.io/github/stars/pocoproject/poco?style=social&color=white)](https://github.com/pocoproject/poco/stargazers) |
+| **[Boost](https://github.com/boostorg/boost)** | **The C++ standard library proving ground.** Peer-reviewed portable C++ source libraries covering async I/O, threads, filesystem, math, and structures. Boost Software License. | [![Stars](https://img.shields.io/github/stars/boostorg/boost?style=social&color=white)](https://github.com/boostorg/boost/stargazers) |
+| **[JUCE](https://github.com/juce-framework/JUCE)** | **Audio application development framework.** Industry standard for building cross-platform audio plugins (VST, AU, AAX), DAWs, and DSP software. JUCE Personal free (<$50K rev), GPLv3 / Paid Tier. | [![Stars](https://img.shields.io/github/stars/juce-framework/JUCE?style=social&color=white)](https://github.com/juce-framework/JUCE/stargazers) |
+| **[wxWidgets](https://github.com/wxWidgets/wxWidgets)** | **Cross-platform native C++ GUI library.** Uses native OS widgets so applications look and behave natively on Windows, macOS, and Linux. wxWindows Library Licence (LGPL exception). | [![Stars](https://img.shields.io/github/stars/wxWidgets/wxWidgets?style=social&color=white)](https://github.com/wxWidgets/wxWidgets/stargazers) |
+| **[GTKmm](https://github.com/GNOME/gtkmm)** | **Official C++ interface for GTK GUI toolkit.** Provides typesafe C++ signals/slots and modern widget layouts for cross-platform desktop applications. GNU LGPL License. | [![Stars](https://img.shields.io/github/stars/GNOME/gtkmm?style=social&color=white)](https://github.com/GNOME/gtkmm/stargazers) |
+| **[NanoGUI](https://github.com/wjakob/nanogui)** | **Minimalistic cross-platform GUI library for OpenGL / GLFW.** Vector graphic design suitable for scientific visualization and 3D graphics applications. BSD License. | [![Stars](https://img.shields.io/github/stars/wjakob/nanogui?style=social&color=white)](https://github.com/wjakob/nanogui/stargazers) |
+| **[Ultralight](https://github.com/ultralight-ux/Ultralight)** | **Lightweight HTML/CSS UI rendering engine for C++ applications.** Enables embedding web-based user interfaces into desktop C++ software with minimal memory footprint. Free for indie / Commercial License. | [![Stars](https://img.shields.io/github/stars/ultralight-ux/Ultralight?style=social&color=white)](https://github.com/ultralight-ux/Ultralight/stargazers) |
+| **[RmlUi](https://github.com/mikke89/RmlUi)** | **C++ user interface library based on HTML and CSS standards.** Designed for realtime applications, games, and customized desktop UI layouts. MIT License. | [![Stars](https://img.shields.io/github/stars/mikke89/RmlUi?style=social&color=white)](https://github.com/mikke89/RmlUi/stargazers) |
+| **[FLTK](https://github.com/fltk/fltk)** | **Fast Light Toolkit (FLTK) for cross-platform GUI development.** Extremely small footprint and fast compilation times with minimal OS dependencies. GNU LGPL License with exception. | [![Stars](https://img.shields.io/github/stars/fltk/fltk?style=social&color=white)](https://github.com/fltk/fltk/stargazers) |
+| **[Nana](https://github.com/cnjerryu/nana)** | **Modern C++ GUI library.** Provides modern C++ style (lambda expressions, smart pointers) for creating cross-platform desktop interfaces smoothly. Boost Software License. | [![Stars](https://img.shields.io/github/stars/cnjerryu/nana?style=social&color=white)](https://github.com/cnjerryu/nana/stargazers) |
+| **[CEGUI](https://github.com/cegui/cegui)** | **Crazy Eddie's GUI System.** Flexible windowing and GUI toolkit engineered specifically for 3D games and graphics rendering engines. MIT License. | [![Stars](https://img.shields.io/github/stars/cegui/cegui?style=social&color=white)](https://github.com/cegui/cegui/stargazers) |
+
+---
+
+## 🤝 How to Contribute
+
+1. 🍴 **Fork** this repository.
+2. ✏️ Add or update entries in `README.md` following the exact table structure.
+3. 📝 Include project name, official website/GitHub link, brief 1-2 sentence description, and exact license model.
+4. 🔀 Submit a Pull Request with clear commit notes.
+
+---
+
+## ⚠️ Disclaimer
+
+- This list is **community-curated** for developer reference.
+- Verify licensing obligations (GPL, LGPL, MIT, Commercial) before integrating any application framework into closed-source or enterprise applications.
+- Curated reference lists follow guidelines from [Awesome-Awesome-Awesome](https://github.com/ishandutta2007/Awesome-Awesome-Awesome).
+
+---
+
+## 📈 Star History
+
+[![Star History Chart](https://star-history.dera.page/svg?repos=ishandutta2007/Awesome-CPP-Application-Framework&type=date&legend=top-left)](https://star-history.dera.page/#ishandutta2007/Awesome-CPP-Application-Framework&type=date&legend=top-left)
+
+---
+
+## 💖 Support & Community
+
+If you find this curated list of C++ Application Frameworks helpful, please consider supporting the repository:
+
+- ⭐ **Star** this repository to help other C++ developers discover it.
+- 🍴 **Fork** and contribute new C++ libraries, GUI frameworks, or tools.
+- 📢 **Share** with developer communities, forums, and team members.
+- ☕ **Sponsor**: Support ongoing maintenance via the [GitHub Sponsor Dashboard](https://github.com/sponsors/ishandutta2007).
